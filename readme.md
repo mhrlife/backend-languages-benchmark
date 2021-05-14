@@ -45,15 +45,15 @@ How to test with apache benckmark?
 ab -n 20000 -c 1000 "http://127.0.0.1:8080/get"
 ```
 # My Results
-## Go
+## Go 1.5
 + Function Execution time: 180ns
 + Requests per second:    14470.45 [#/sec] (mean)
 + Time per request:       69.106 [ms] (mean)
-## PHP
+## PHP 8.0
 + Function Execution time: 3000ns
 + Requests per second:    2572.90 [#/sec] (mean)
 + Time per request:       388.667 [ms] (mean)
-## NodeJS
+## NodeJS 14.0
 + Function Execution time: 160ns
 + Requests per second:    7434.52 [#/sec] (mean)
 + Time per request:       134.508 [ms] (mean)
