@@ -1,9 +1,9 @@
-#About
+# About
 Each language needs to implement a webserver on port 8080 which has "/get" route for get requests that does 50 binary search for "123"  on a sorted array with 1e6 members.  
 Also they need to have a way to benchmark the search function with 1e6 iterations and print the average execute time in nano seconds.
 
-#Technologies
-##Go
+# Technologies
+## Go
 - Router: [Echo](https://github.com/labstack/echo)  
 To be fair I limited cpu cores to 1.
 #### How to install?
@@ -17,7 +17,7 @@ How to test with apache benckmark?
 ```
 ab -n 20000 -c 1000 "http://127.0.0.1:8080/get"
 ```
-##PHP
+## PHP
 - Web server: [ReactPHP](https://github.com/reactphp) (We can't implement it with cgi interface)
 #### How to install?
 ```
@@ -31,7 +31,7 @@ How to test with apache benckmark?
 ab -n 20000 -c 1000 "http://127.0.0.1:8080/get"
 ```
 
-##NodeJS
+## NodeJS
 - Web framework: [ExpressJS](https://expressjs.com/) 
 #### How to install?
 ```
@@ -44,7 +44,7 @@ How to test with apache benckmark?
 ```
 ab -n 20000 -c 1000 "http://127.0.0.1:8080/get"
 ```
-#My Results
+# My Results
 ## Go
 + Function Execution time: 180ns
 + Requests per second:    14470.45 [#/sec] (mean)
