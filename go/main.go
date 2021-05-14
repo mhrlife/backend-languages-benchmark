@@ -13,7 +13,7 @@ import (
 
 func main() {
 	b := bucket.NewBucket()
-	if os.Args[1] == "test" {
+	if len(os.Args) > 1 && os.Args[1] == "test" {
 		now := time.Now()
 		var total int = 1e6
 		for i := 0; i < total; i++ {
