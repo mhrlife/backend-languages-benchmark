@@ -10,8 +10,8 @@ To be fair I limited cpu cores to 1.
 ```
 cd go
 go mod install
-go run main.go serve // for serving
-go run main.go test // for benchmark
+go run main.go // for serving
+go test -bench=. // for benchmark
 ```
 How to test with apache benckmark?  
 ```
@@ -46,9 +46,9 @@ ab -n 20000 -c 1000 "http://127.0.0.1:8080/get"
 ```
 # My Results
 ## Go 1.5
-+ Function Execution time: 180ns
-+ Requests per second:    14470.45 [#/sec] (mean)
-+ Time per request:       69.106 [ms] (mean)
++ Function Execution time: 100ns
++ Requests per second:    15470.45 [#/sec] (mean)
++ Time per request:       65.106 [ms] (mean)
 ## PHP 8.0
 + Function Execution time: 3000ns
 + Requests per second:    2572.90 [#/sec] (mean)
